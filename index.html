@@ -26,7 +26,7 @@
       <button type="button" class="btn btn-warning mr-sm-2" data-toggle="modal" data-target="#myModal">SignUp<i class="far fa-user-circle"></i>
       </button>
       <input class="form-control mr-sm-2" type="search" placeholder="Search Users..." aria-label="Search" id="userAddress">
-      <button class="btn btn-info my-1 my-sm-0" onclick="initUserProfile()" type="submit">Search</button>
+      <button class="btn btn-info my-1 my-sm-0" onclick="initUserProfile()">Search</button>
     </form>
   </div>
 </nav>
@@ -64,8 +64,8 @@
                 <input class="form-check-input" type="checkbox"> Remember me
               </label>
             </div>
-            <button type="submit" class="btn btn-primary" id="createAccount">Register</button>
-            <button type="submit" class="btn btn-primary" id="updateCredentials">Updates</button>
+            <button class="btn btn-primary" id="createAccount">Register</button>
+            <button class="btn btn-primary" id="updateCredentials">Update</button>
           </form>
         </div>
  
@@ -93,11 +93,11 @@
       <form class="form-group">
         <input type="search" class="form-control mb-2 mr-sm-4" id="searchTitle" placeholder="Search TweetS..">
         <button type="submit" class="btn btn-primary mb-2 col text-center" onclick="searchTweets()">Submit</button>
-        <button id="initTweets" onclick="initTweets()" type="submit" class="btn btn-primary mb-2"><i class="fas fa-sync-alt"></i></button>
+        <button id="initTweets" onclick="initTweets()" class="btn btn-primary mb-2"><i class="fas fa-sync-alt"></i></button>
         <div id="searchTweets"></div>
-        <input type="password" id="tweetTitle" class="form-control mb-2 mr-sm-2" placeholder="Enter Your Title">
+        <input type="text" id="tweetTitle" class="form-control mb-2 mr-sm-2" placeholder="Enter Your Title">
         <textarea class="form-control mb-2" id="content" rows="4" id="comment" placeholder="What's On Your Mind?"></textarea>
-        <button type="submit" id="addTweet" class="btn btn-primary mb-2 col text-center">Add Tweet</button>
+        <button id="addTweet" class="btn btn-primary mb-2 col text-center">Add Tweet</button>
         <div id="allTweets"></div>
       </form>
     </div>
@@ -111,7 +111,7 @@
         <button type="button" class="btn btn-primary mb-2" id="messages" onclick="initMessages()">
           Messages <span class="badge badge-light" id="badge">0</span>
         </button>
-        <input type="password" class="form-control mb-2 mr-sm-2" id="addressTo" placeholder="Enter Your Title">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="addressTo" placeholder="Enter Your Title">
         <textarea class="form-control mb-2" rows="4" id="messageContent" placeholder="What's On Your Mind?"></textarea>
         <button type="button" class="btn btn-primary mb-2" id="sendMessage">
           <i class="fab fa-telegram-plane"></i>
@@ -129,20 +129,6 @@
   <div id="log" style="text-align: center;"></div>
 
 <script>
-// let modalBtn = document.getElementById("modal-btn")
-// let modal = document.querySelector(".modal")
-// let closeBtn = document.querySelector(".close-btn")
-// modalBtn.onclick = function(){
-//   modal.style.display = "block"
-// }
-// closeBtn.onclick = function(){
-//   modal.style.display = "none"
-// }
-// window.onclick = function(e){
-//   if(e.target == modal){
-//     modal.style.display = "none"
-//   }
-// }
 </script>
 <script src="web3.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
